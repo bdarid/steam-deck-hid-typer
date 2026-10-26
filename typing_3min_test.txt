@@ -1,0 +1,8 @@
+' TYPE TEST - DO NOT RUN
+VAR MESSAGE$,VALUE#,I
+MESSAGE$="Upper lower MixedCase 123"
+VALUE#=12345
+PRINT MESSAGE$
+' SYMBOLS ! @ # $ % ^ & * ( ) - _ = +
+PRINT "Brackets [ ] { } \\ | ; : , . < > / ?"
+' FINAL SENTINEL Alpha alpha MixedCase 9876
