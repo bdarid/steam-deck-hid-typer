@@ -89,21 +89,5 @@ test ! -e /dev/hidg0 && echo "HID device removed"
 
 The script attempts to set an exposed USB role switch to `device` during setup; it does not automatically restore the role that was active before setup. Check your device's state after cleanup and reboot if needed.
 
-## Publishing to GitHub
-
-1. Sign in at [GitHub](https://github.com/).
-2. Click **+** in the top-right, then **New repository**.
-3. Choose a repository name (for example, `steam-deck-hid-typer`) and a short description.
-4. Choose **Private** or **Public**. Public repositories can be copied by anyone; use Private while reviewing the contents.
-5. Leave **Add a README** unchecked because you will upload this `README.md` file.
-6. Click **Create repository**.
-7. In the new repository, click **Add file → Upload files**.
-8. Upload `README.md`, `hid_typer_reliable.py`, and the harmless test files listed above. Do not upload third-party code unless redistribution is permitted.
-9. Enter a commit message such as `Add HID typing utility and harmless tests`, then click **Commit changes**.
-10. Open the repository page and confirm the README renders and that only intended files were published.
-
-See GitHub's official guides: [Create a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository) and [Upload files](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository).
-
-## Disclaimer
 
 This project changes USB gadget configuration and sends keystrokes to whichever device has focus. Review the code, use a harmless test file first, and keep the host visible. No guarantee is made that every character will be delivered correctly on every device or configuration.
